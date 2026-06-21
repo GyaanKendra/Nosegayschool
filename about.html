@@ -1,0 +1,2068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nosegay Convent School, Sikar – Premium education since 2007, shaping character, building confidence, and preparing children for a successful future." />
+    <title>Nosegay Convent School, Sikar – Premium Education Since 2007</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+
+    <!-- Swiper CSS + JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        /* ============================================================
+           LIGHT & PREMIUM COLOR THEME
+           ============================================================ */
+        :root {
+            --bg-light: #f9f6f0;
+            --bg-white: #ffffff;
+            --bg-card: #ffffff;
+            --orange: #f97316;
+            --orange-light: #fb923c;
+            --orange-dark: #ea580c;
+            --orange-glow: rgba(249, 115, 22, 0.20);
+            --text-dark: #1a1a2e;
+            --text-muted: #6b6b80;
+            --text-white: #ffffff;
+            --shadow-sm: 0 4px 24px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 12px 48px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 24px 72px rgba(0, 0, 0, 0.08);
+            --radius: 20px;
+            --radius-sm: 12px;
+            --transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-light);
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* ---------- Orange Gradient Text ---------- */
+        .text-orange-gradient {
+            background: linear-gradient(135deg, var(--orange-light) 0%, var(--orange) 50%, var(--orange-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-orange {
+            color: var(--orange);
+        }
+        .border-orange {
+            border-color: var(--orange);
+        }
+        .bg-orange {
+            background: var(--orange);
+        }
+        .bg-orange-soft {
+            background: rgba(249, 115, 22, 0.08);
+        }
+        .bg-orange-glow {
+            background: var(--orange-glow);
+        }
+
+        /* ---------- Buttons ---------- */
+        .btn-orange {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 40px;
+            background: linear-gradient(135deg, var(--orange-light), var(--orange));
+            color: var(--text-white);
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 8px 32px rgba(249, 115, 22, 0.30);
+            text-decoration: none;
+            letter-spacing: 0.01em;
+        }
+
+        .btn-orange:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 16px 48px rgba(249, 115, 22, 0.45);
+            color: var(--text-white);
+        }
+
+        .btn-orange i {
+            transition: var(--transition);
+        }
+        .btn-orange:hover i {
+            transform: translateX(6px);
+        }
+
+        .btn-outline-orange {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 36px;
+            background: transparent;
+            color: var(--orange);
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid var(--orange);
+            border-radius: 60px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .btn-outline-orange:hover {
+            background: var(--orange);
+            color: var(--text-white);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(249, 115, 22, 0.25);
+        }
+
+        .btn-outline-orange i {
+            transition: var(--transition);
+        }
+        .btn-outline-orange:hover i {
+            transform: translateX(6px);
+        }
+
+        /* ---------- Navbar ---------- */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 14px 0;
+            transition: var(--transition);
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.02);
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.96);
+            box-shadow: 0 4px 40px rgba(0, 0, 0, 0.06);
+            padding: 10px 0;
+        }
+
+        .navbar .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .navbar .logo span {
+            color: var(--orange);
+        }
+
+        .navbar .logo i {
+            color: var(--orange);
+            margin-right: 8px;
+            font-size: 1.3rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 8px 18px;
+            border-radius: 40px;
+            transition: var(--transition);
+            position: relative;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 70%;
+            height: 2.5px;
+            background: linear-gradient(90deg, var(--orange-light), var(--orange), var(--orange-dark));
+            border-radius: 4px;
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transform-origin: center;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+
+        .nav-links a:hover {
+            color: var(--text-dark);
+            background: rgba(249, 115, 22, 0.06);
+        }
+
+        .nav-links a.active {
+            color: var(--text-dark);
+            background: rgba(249, 115, 22, 0.08);
+        }
+
+        .nav-links .btn-orange {
+            padding: 10px 24px;
+            font-size: 0.85rem;
+            gap: 8px;
+        }
+        .nav-links .btn-orange::after {
+            display: none;
+        }
+
+        /* ---------- Mobile Menu ---------- */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 6px 4px;
+            background: transparent;
+            border: none;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: var(--text-dark);
+            border-radius: 4px;
+            transition: var(--transition);
+            transform-origin: center;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 85%;
+            max-width: 380px;
+            height: 100vh;
+            background: var(--bg-white);
+            padding: 100px 32px 40px;
+            transition: var(--transition);
+            z-index: 999;
+            overflow-y: auto;
+            box-shadow: -20px 0 60px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            border-left: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .mobile-menu.open {
+            right: 0;
+        }
+
+        .mobile-menu a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 500;
+            padding: 14px 18px;
+            border-radius: 12px;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .mobile-menu a:hover,
+        .mobile-menu a.active {
+            background: rgba(249, 115, 22, 0.06);
+            color: var(--text-dark);
+        }
+
+        .mobile-menu .btn-orange {
+            margin-top: 16px;
+            justify-content: center;
+            width: 100%;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .mobile-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.30);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            z-index: 998;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .mobile-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ---------- Hero Section (Bubble Bounce) ---------- */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 0 80px;
+            background: linear-gradient(160deg, #fdf8f2 0%, #f5ede3 100%);
+            overflow: hidden;
+        }
+
+        .hero-bubbles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, rgba(249, 115, 22, 0.08), rgba(249, 115, 22, 0.02));
+            border: 1px solid rgba(249, 115, 22, 0.04);
+            animation: floatBubble 8s ease-in-out infinite;
+        }
+
+        .bubble:nth-child(1) {
+            width: 180px;
+            height: 180px;
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+            animation-duration: 9s;
+        }
+        .bubble:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            bottom: 15%;
+            left: 15%;
+            animation-delay: 1.5s;
+            animation-duration: 7s;
+        }
+        .bubble:nth-child(3) {
+            width: 260px;
+            height: 260px;
+            top: 50%;
+            left: 60%;
+            animation-delay: 0.8s;
+            animation-duration: 10s;
+            opacity: 0.4;
+        }
+        .bubble:nth-child(4) {
+            width: 80px;
+            height: 80px;
+            bottom: 30%;
+            right: 10%;
+            animation-delay: 2.2s;
+            animation-duration: 6s;
+        }
+        .bubble:nth-child(5) {
+            width: 200px;
+            height: 200px;
+            top: 5%;
+            right: 25%;
+            animation-delay: 0.3s;
+            animation-duration: 11s;
+            opacity: 0.3;
+        }
+
+        @keyframes floatBubble {
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+            25% {
+                transform: translate(15px, -25px) scale(1.02);
+            }
+            50% {
+                transform: translate(-10px, 10px) scale(0.98);
+            }
+            75% {
+                transform: translate(20px, -15px) scale(1.01);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            animation: heroBounce 4s ease-in-out infinite;
+        }
+
+        @keyframes heroBounce {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .hero-content .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(249, 115, 22, 0.10);
+            padding: 6px 20px;
+            border-radius: 60px;
+            color: var(--orange);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            border: 1px solid rgba(249, 115, 22, 0.10);
+            width: fit-content;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+            color: var(--text-dark);
+            line-height: 1.08;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-content h1 .highlight {
+            color: var(--orange);
+        }
+
+        .hero-content p {
+            font-size: clamp(1rem, 1.2vw, 1.15rem);
+            color: var(--text-muted);
+            line-height: 1.8;
+            max-width: 480px;
+            margin-bottom: 32px;
+        }
+
+        .hero-content .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            z-index: 1;
+            animation: heroBounce 4s ease-in-out infinite 0.5s;
+        }
+
+        .hero-image-wrapper .image-container {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            background: var(--bg-white);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .hero-image-wrapper .image-container img {
+            width: 100%;
+            height: auto;
+            min-height: 320px;
+            max-height: 520px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-image-wrapper .image-container .accent-corner {
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            width: 100px;
+            height: 100px;
+            border-top: 4px solid var(--orange);
+            border-right: 4px solid var(--orange);
+            border-radius: 0 var(--radius) 0 0;
+            opacity: 0.50;
+            pointer-events: none;
+        }
+
+        .hero-image-wrapper .image-container .accent-corner-bl {
+            position: absolute;
+            bottom: -2px;
+            left: -2px;
+            width: 100px;
+            height: 100px;
+            border-bottom: 4px solid var(--orange);
+            border-left: 4px solid var(--orange);
+            border-radius: 0 0 0 var(--radius);
+            opacity: 0.50;
+            pointer-events: none;
+        }
+
+        /* ---------- Section Titles ---------- */
+        .section-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-title .subtitle {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--orange);
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .section-title .subtitle::before,
+        .section-title .subtitle::after {
+            content: '—';
+            margin: 0 12px;
+            color: var(--orange);
+            opacity: 0.30;
+        }
+
+        .section-title h2 {
+            font-size: clamp(2rem, 3.4vw, 2.8rem);
+            color: var(--text-dark);
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        .section-title h2 span {
+            color: var(--orange);
+        }
+
+        .section-title p {
+            font-size: 1rem;
+            color: var(--text-muted);
+            max-width: 540px;
+            margin: 14px auto 0;
+            line-height: 1.7;
+        }
+
+        /* ---------- Cards ---------- */
+        .premium-card {
+            background: var(--bg-white);
+            border-radius: var(--radius);
+            padding: 32px 28px;
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .premium-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--orange-light), var(--orange), var(--orange-dark));
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .premium-card:hover::before {
+            opacity: 1;
+        }
+
+        .premium-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+            border-color: rgba(249, 115, 22, 0.10);
+        }
+
+        .premium-card .icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: var(--text-white);
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--orange-light), var(--orange));
+            box-shadow: 0 8px 24px rgba(249, 115, 22, 0.20);
+        }
+
+        .premium-card h4 {
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .premium-card p {
+            color: var(--text-muted);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* ---------- Director / Philosophy Section ---------- */
+        .director-img-wrapper {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            background: var(--bg-white);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .director-img-wrapper::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.80) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .director-img-wrapper .corner-accent {
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            width: 100px;
+            height: 100px;
+            border-top: 4px solid var(--orange);
+            border-right: 4px solid var(--orange);
+            border-radius: 0 var(--radius) 0 0;
+            opacity: 0.50;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .director-img-wrapper .corner-accent-bottom {
+            position: absolute;
+            bottom: -2px;
+            left: -2px;
+            width: 100px;
+            height: 100px;
+            border-bottom: 4px solid var(--orange);
+            border-left: 4px solid var(--orange);
+            border-radius: 0 0 0 var(--radius);
+            opacity: 0.50;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .director-img-wrapper .shade-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at 30% 50%, transparent 30%, rgba(255, 255, 255, 0.15) 100%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .director-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            min-height: 380px;
+            display: block;
+        }
+
+        .director-message {
+            background: var(--bg-white);
+            border-radius: var(--radius);
+            padding: 40px 36px;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .director-message .quote-mark {
+            font-size: 3rem;
+            color: var(--orange);
+            opacity: 0.15;
+            line-height: 1;
+            margin-bottom: -8px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .director-message h3 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+
+        .director-message p {
+            color: var(--text-muted);
+            line-height: 1.9;
+            font-size: 1rem;
+        }
+
+        .director-message .signature-block {
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .director-message .signature-block .name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+
+        .director-message .signature-block .title {
+            font-size: 0.85rem;
+            color: var(--orange);
+            font-weight: 500;
+        }
+
+        /* ---------- News Slider (3 slides visible) ---------- */
+        .news-slider-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius);
+            background: var(--bg-white);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            box-shadow: var(--shadow-sm);
+            padding: 0 4px;
+        }
+
+        .news-track {
+            display: flex;
+            transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            will-change: transform;
+            gap: 0;
+        }
+
+        .news-slide {
+            flex: 0 0 33.333%;
+            padding: 28px 20px;
+            min-height: 280px;
+            box-sizing: border-box;
+            border-right: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .news-slide:last-child {
+            border-right: none;
+        }
+
+        .news-slide .image-wrap {
+            width: 100%;
+            height: 160px;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            margin-bottom: 14px;
+            background: var(--bg-light);
+            position: relative;
+        }
+
+        .news-slide .image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .news-slide:hover .image-wrap img {
+            transform: scale(1.04);
+        }
+
+        .news-slide .date-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(249, 115, 22, 0.08);
+            padding: 4px 14px;
+            border-radius: 40px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--orange);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            border: 1px solid rgba(249, 115, 22, 0.06);
+            margin-bottom: 10px;
+        }
+
+        .news-slide h4 {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 6px;
+            line-height: 1.3;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .news-slide p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .news-slide .read-more {
+            color: var(--orange);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 10px;
+            transition: var(--transition);
+        }
+
+        .news-slide .read-more:hover {
+            gap: 12px;
+            color: var(--orange-dark);
+        }
+
+        .news-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            padding: 18px 0 24px;
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+            flex-wrap: wrap;
+        }
+
+        .news-nav button {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            background: var(--bg-white);
+            color: var(--text-dark);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .news-nav button:hover {
+            background: var(--orange);
+            border-color: var(--orange);
+            color: var(--text-white);
+            box-shadow: 0 8px 24px rgba(249, 115, 22, 0.25);
+        }
+
+        .news-nav .dots {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .news-nav .dots .ndot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.12);
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            padding: 0;
+        }
+
+        .news-nav .dots .ndot.active {
+            background: var(--orange);
+            box-shadow: 0 0 16px rgba(249, 115, 22, 0.30);
+            transform: scale(1.15);
+        }
+
+        .news-nav .dots .ndot:hover {
+            background: var(--orange-light);
+        }
+
+        /* ---------- Footer ---------- */
+        .footer {
+            background: var(--bg-white);
+            color: var(--text-muted);
+            padding: 56px 0 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .footer h4 {
+            color: var(--text-dark);
+            font-size: 1.2rem;
+            margin-bottom: 18px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer a:hover {
+            color: var(--orange);
+        }
+
+        .footer .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.03);
+            color: var(--text-muted);
+            transition: var(--transition);
+            margin-right: 6px;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .footer .social-links a:hover {
+            background: var(--orange);
+            color: var(--text-white);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(249, 115, 22, 0.20);
+            border-color: var(--orange);
+        }
+
+        .footer .copyright {
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+            padding: 20px 0;
+            margin-top: 36px;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* ---------- Back to Top ---------- */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--orange-light), var(--orange));
+            color: var(--text-white);
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 8px 32px rgba(249, 115, 22, 0.30);
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-6px) scale(1.06);
+            box-shadow: 0 16px 48px rgba(249, 115, 22, 0.45);
+        }
+
+        /* ---------- Animations ---------- */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-1 {
+            transition-delay: 0.1s;
+        }
+        .delay-2 {
+            transition-delay: 0.2s;
+        }
+        .delay-3 {
+            transition-delay: 0.3s;
+        }
+        .delay-4 {
+            transition-delay: 0.4s;
+        }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 1024px) {
+            .news-slide {
+                flex: 0 0 50%;
+                padding: 20px 16px;
+                min-height: 240px;
+            }
+            .news-slide .image-wrap {
+                height: 130px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .navbar .logo {
+                font-size: 1.2rem;
+            }
+
+            .hero-section {
+                padding: 100px 0 60px;
+                min-height: auto;
+            }
+
+            .hero-content {
+                animation: none;
+            }
+            .hero-image-wrapper {
+                animation: none;
+            }
+            .hero-image-wrapper .image-container img {
+                min-height: 200px;
+                max-height: 320px;
+            }
+
+            .bubble {
+                display: none;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .director-message {
+                padding: 28px 20px;
+            }
+            .director-message h3 {
+                font-size: 1.3rem;
+            }
+            .director-img-wrapper img {
+                min-height: 260px;
+            }
+
+            .news-slide {
+                flex: 0 0 100%;
+                padding: 16px 16px;
+                min-height: 200px;
+                border-right: none;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+            }
+            .news-slide:last-child {
+                border-bottom: none;
+            }
+            .news-slide .image-wrap {
+                height: 140px;
+            }
+
+            .news-nav {
+                padding: 14px 0 18px;
+                gap: 12px;
+            }
+            .news-nav button {
+                width: 38px;
+                height: 38px;
+                font-size: 0.85rem;
+            }
+
+            .footer .copyright {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .director-message .signature-block {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .hero-content .badge {
+                font-size: 0.7rem;
+                padding: 4px 14px;
+            }
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .hero-content p {
+                font-size: 0.95rem;
+            }
+
+            .btn-orange,
+            .btn-outline-orange {
+                padding: 12px 24px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 1.7rem;
+            }
+            .hero-image-wrapper .image-container img {
+                min-height: 160px;
+                max-height: 260px;
+            }
+            .news-slide .image-wrap {
+                height: 120px;
+            }
+            .news-slide h4 {
+                font-size: 1rem;
+            }
+            .premium-card {
+                padding: 20px 16px;
+            }
+        }
+
+        /* ---------- Scrollbar ---------- */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-light);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--orange);
+            border-radius: 12px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--orange-dark);
+        }
+
+        /* ---------- Form ---------- */
+        .premium-input {
+            width: 100%;
+            padding: 14px 18px;
+            border: 1.5px solid rgba(0, 0, 0, 0.06);
+            border-radius: var(--radius-sm);
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            transition: var(--transition);
+            background: var(--bg-white);
+            color: var(--text-dark);
+            outline: none;
+        }
+
+        .premium-input:focus {
+            border-color: var(--orange);
+            box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.08);
+        }
+
+        .premium-input::placeholder {
+            color: var(--text-muted);
+            opacity: 0.50;
+        }
+
+        textarea.premium-input {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .bg-premium-light {
+            background: var(--bg-light);
+        }
+        .border-premium {
+            border-color: rgba(0, 0, 0, 0.04);
+        }
+        .text-premium-muted {
+            color: var(--text-muted);
+        }
+
+        .section-light {
+            background: var(--bg-light);
+        }
+        .section-white {
+            background: var(--bg-white);
+        }
+
+        /* Student Card */
+        .student-card {
+            background: #fff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .student-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .student-image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+        }
+
+        .student-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .student-name {
+            text-align: center;
+            padding: 14px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #222;
+            border-top: 1px solid #eee;
+            background: #fff;
+        }
+
+        .swiper-pagination {
+            margin-top: 25px;
+            position: relative;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background: #cbd5e1;
+            opacity: 1;
+            transition: 0.3s;
+        }
+
+        .swiper-pagination-bullet-active {
+            width: 30px;
+            border-radius: 20px;
+            background: #f97316;
+        }
+
+        /* ---------- Facility Icon Grid ---------- */
+        .facility-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 12px 16px;
+            background: var(--bg-white);
+            border-radius: var(--radius-sm);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            transition: var(--transition);
+        }
+
+        .facility-item:hover {
+            border-color: var(--orange);
+            box-shadow: var(--shadow-sm);
+            transform: translateX(4px);
+        }
+
+        .facility-item .ficon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(249, 115, 22, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--orange);
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .facility-item .flabel {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        /* Why Choose Us */
+        .why-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .why-item:last-child {
+            border-bottom: none;
+        }
+
+        .why-item .wnum {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--orange-light), var(--orange));
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .why-item .wtext {
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        .why-item .wdesc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+    NAVBAR
+    ============================================================ -->
+    <header class="navbar" id="navbar">
+        <div class="container mx-auto px-6 lg:px-12 flex items-center justify-between">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i> Nosegay<span>Convent</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+    	<!---  <li><a href="#director">Director</a></li>
+                <li><a href="#news">Latest News</a></li>-->
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="#admissions" class="btn-orange" style="padding:10px 24px; font-size:0.85rem; gap:8px;">
+                        Enroll Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Menu (no icons) -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+    <!---  <a href="#director">Director</a>
+        <a href="#news">Latest News</a>-->
+        <a href="#admissions">Admissions</a>
+        <a href="contact.html">Contact</a>
+        <a href="#admissions" class="btn-orange" style="justify-content:center; width:100%; margin-top:20px;">
+            Enroll Now <i class="fas fa-arrow-right"></i>
+        </a>
+    </nav>
+
+    <!-- ============================================================
+    HERO SECTION
+    ============================================================ -->
+    <section class="hero-section" id="home">
+        <!-- Floating Bubbles -->
+        <div class="hero-bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+
+        <div class="container mx-auto px-6 lg:px-12 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <div class="badge">
+                        <i class="fas fa-sparkles"></i> Since 2007 · RBSE Affiliated
+                    </div>
+                    <h1>
+                        Shaping Character, <br />
+                        <span class="highlight">Building Confidence</span>
+                    </h1>
+                    <p>
+                        Nosegay Convent School, Sikar — where education goes beyond books. We nurture curious minds, strong values, and confident leaders for a successful future.
+                    </p>
+                    <div class="actions">
+                        <a href="#admissions" class="btn-orange">Enroll Today <i class="fas fa-arrow-right"></i></a>
+                        <a href="#about" class="btn-outline-orange">Discover More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="hero-image-wrapper">
+                    <div class="image-container">
+                        <img src="file:///D:/Websites/Nosegy/aboutmmg.jpg" alt="Nosegay Convent School Campus" />
+                        <div class="accent-corner"></div>
+                        <div class="accent-corner-bl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    COUNTERS
+    ============================================================ -->
+    <section class="py-16 section-white">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="font-bold text-3xl text-indigo-600 counter" data-target="1200" data-suffix="+">0</div>
+                    <div class="text-gray-600 mt-1">Happy Students</div>
+                </div>
+                <div class="text-center">
+                    <div class="font-bold text-3xl text-emerald-600 counter" data-target="18" data-suffix="+">0</div>
+                    <div class="text-gray-600 mt-1">Years of Excellence</div>
+                </div>
+                <div class="text-center">
+                    <div class="font-bold text-3xl text-rose-500 counter" data-target="100" data-suffix="%">0</div>
+                    <div class="text-gray-600 mt-1">Parent Satisfaction</div>
+                </div>
+                <div class="text-center">
+                    <div class="font-bold text-3xl text-amber-500 counter" data-target="98" data-suffix="%">0</div>
+                    <div class="text-gray-600 mt-1">Academic Pass Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    ABOUT
+    ============================================================ -->
+    <section class="py-20 section-light" id="about">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="section-title fade-up">
+                <span class="subtitle">About Us</span>
+                <h2>Nurturing <span>Leaders</span> of Tomorrow</h2>
+                <p>At Nosegay Convent School, Sikar, we believe education is about shaping character, building confidence, and preparing children for a successful future.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div class="fade-up">
+                    <div class="relative rounded-2xl overflow-hidden shadow-lg border border-premium bg-white">
+                        <img src="file:///D:/Websites/Nosegy/aboutmg.jpeg" alt="Students at Nosegay Convent School" class="w-full object-cover h-[380px] md:h-[420px]" />
+                    </div>
+                </div>
+
+                <div class="space-y-6 fade-up delay-1">
+                    <h3 class="text-3xl font-serif font-bold text-dark leading-tight">Education with <span class="text-orange-gradient">Purpose &amp; Values</span></h3>
+                    <p class="text-premium-muted text-lg leading-relaxed">
+                        Established in 2007, Nosegay Convent School is affiliated with the Rajasthan Board of Secondary Education (RBSE). Located in the peaceful surroundings of Piprali, Sikar, we offer a safe, inspiring space where every child grows academically, emotionally, socially, and morally.
+                    </p>
+                    <p class="text-premium-muted text-lg leading-relaxed">
+                        We believe every child carries a unique spark — our role is to nurture that spark into a strong light of knowledge, values, and confidence.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-orange-500/15 flex items-center justify-center text-orange"><i class="fas fa-check"></i></div>
+                            <span class="text-dark/80 font-medium">Learning with Curiosity</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-orange-500/15 flex items-center justify-center text-orange"><i class="fas fa-check"></i></div>
+                            <span class="text-dark/80 font-medium">Discipline with Understanding</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-orange-500/15 flex items-center justify-center text-orange"><i class="fas fa-check"></i></div>
+                            <span class="text-dark/80 font-medium">Education with Purpose</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-orange-500/15 flex items-center justify-center text-orange"><i class="fas fa-check"></i></div>
+                            <span class="text-dark/80 font-medium">Moral &amp; Ethical Foundation</span>
+                        </div>
+                    </div>
+                    <a href="#admissions" class="btn-orange mt-4">Explore Our Approach <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    WHAT WE DO – CORE OFFERINGS
+    ============================================================ -->
+    <section class="py-20 section-white" id="whatwedo">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="section-title fade-up">
+                <span class="subtitle">What We Do</span>
+                <h2>Beyond <span>Traditional</span> Education</h2>
+                <p>We focus on complete development through a balanced blend of academics, character building, and co-curricular engagement.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="premium-card fade-up">
+                    <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h4>Academic Excellence</h4>
+                    <p>Strong foundation in all core subjects with concept-based, interactive teaching methods.</p>
+                </div>
+                <div class="premium-card fade-up delay-1">
+                    <div class="icon"><i class="fas fa-brain"></i></div>
+                    <h4>Skill Development</h4>
+                    <p>Communication, reasoning, and creative thinking skills for real-world success.</p>
+                </div>
+                <div class="premium-card fade-up delay-2">
+                    <div class="icon"><i class="fas fa-heart"></i></div>
+                    <h4>Character Building</h4>
+                    <p>Discipline, respect, responsibility, and strong moral &amp; ethical foundations.</p>
+                </div>
+                <div class="premium-card fade-up delay-1">
+                    <div class="icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <h4>Activity-Based Learning</h4>
+                    <p>Learning through real-life examples, hands-on activities, and exploration.</p>
+                </div>
+                <div class="premium-card fade-up delay-2">
+                    <div class="icon"><i class="fas fa-music"></i></div>
+                    <h4>Co-curricular Engagement</h4>
+                    <p>Sports, cultural programs, debates, competitions, and personality development.</p>
+                </div>
+                <div class="premium-card fade-up delay-3">
+                    <div class="icon"><i class="fas fa-users"></i></div>
+                    <h4>Individual Attention</h4>
+                    <p>Understanding every child's strengths and needs with small class sizes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================================================
+    PHILOSOPHY / VISION & MISSION
+    ============================================================ -->
+    <section class="py-20 section-light" id="philosophy">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="section-title fade-up">
+                <span class="subtitle">Our Philosophy</span>
+                <h2>Vision, Mission &amp; <span>Core Values</span></h2>
+                <p>Guiding every child toward a future of knowledge, character, and confidence.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-stretch">
+                <!-- Left: Image -->
+                <div class="fade-up director-img-wrapper" style="min-height:380px;">
+                    <img src="file:///D:/Websites/Nosegy/director.png" alt="Nosegay Convent School Philosophy" />
+                    <div class="corner-accent"></div>
+                    <div class="corner-accent-bottom"></div>
+                    <div class="shade-overlay"></div>
+                    <div class="absolute bottom-6 left-6 z-10 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full border border-premium text-sm text-dark/80 flex items-center gap-2 shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+                        Established 2007
+                    </div>
+                </div>
+
+                <!-- Right: Message -->
+                <div class="fade-up delay-1 director-message">
+                    <div class="quote-mark">"</div>
+                    <h3>Every Child Carries a <span class="text-orange-gradient">Unique Spark</span></h3>
+                    <p>
+                        Our role is to nurture that spark into a strong light of knowledge, values, and confidence. We believe in <strong>learning with curiosity</strong>, <strong>discipline with understanding</strong>, and <strong>education with purpose</strong>.
+                    </p>
+
+                    <div class="mt-4 space-y-3">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-full bg-orange-500/15 flex items-center justify-center text-orange flex-shrink-0 mt-0.5"><i class="fas fa-eye text-sm"></i></div>
+                            <div>
+                                <span class="font-semibold text-dark">Our Vision</span>
+                                <p class="text-premium-muted text-sm">To create a learning environment where students are empowered with knowledge, creativity, and strong values — helping them become confident, responsible, and successful global citizens.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-full bg-orange-500/15 flex items-center justify-center text-orange flex-shrink-0 mt-0.5"><i class="fas fa-bullseye text-sm"></i></div>
+                            <div>
+                                <span class="font-semibold text-dark">Our Mission</span>
+                                <p class="text-premium-muted text-sm">Providing quality and value-based education, encouraging creativity and critical thinking, building strong moral foundations, using modern teaching methods, and preparing students for academic and real-world success.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="signature-block">
+                        <div>
+                            <div class="name">Nosegay Convent School</div>
+                            <div class="title">Sikar · Rajasthan</div>
+                        </div>
+                        <div class="signature-img" style="font-size:1.2rem; opacity:0.4;">Since 2007</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- ============================================================
+    FACILITIES
+    ============================================================ -->
+    <section class="py-20 section-light" id="facilities">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="section-title fade-up">
+                <span class="subtitle">Our Campus</span>
+                <h2>Safe &amp; <span>Inspiring</span> Environment</h2>
+                <p>We provide a secure, clean, and supportive learning space for every child.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+                <div class="facility-item fade-up">
+                    <div class="ficon"><i class="fas fa-building"></i></div>
+                    <div class="flabel">Spacious Classrooms</div>
+                </div>
+                <div class="facility-item fade-up delay-1">
+                    <div class="ficon"><i class="fas fa-book-open"></i></div>
+                    <div class="flabel">Library &amp; Reading Room</div>
+                </div>
+                <div class="facility-item fade-up delay-2">
+                    <div class="ficon"><i class="fas fa-futbol"></i></div>
+                    <div class="flabel">Playground &amp; Sports</div>
+                </div>
+                <div class="facility-item fade-up delay-1">
+                    <div class="ficon"><i class="fas fa-tint"></i></div>
+                    <div class="flabel">Clean Drinking Water</div>
+                </div>
+                <div class="facility-item fade-up delay-2">
+                    <div class="ficon"><i class="fas fa-laptop"></i></div>
+                    <div class="flabel">Digital Learning Support</div>
+                </div>
+                <div class="facility-item fade-up delay-3">
+                    <div class="ficon"><i class="fas fa-handshake"></i></div>
+                    <div class="flabel">Co-educational &amp; Respectful</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    WHY CHOOSE US
+    ============================================================ -->
+    <section class="py-20 section-white" id="whyus">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="section-title fade-up">
+                <span class="subtitle">Why Choose Us</span>
+                <h2>Your Child's <span>Future</span> with Us</h2>
+                <p>We prepare students to think confidently, communicate effectively, and build a strong foundation for life.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <div class="why-item fade-up">
+                    <div class="wnum">1</div>
+                    <div><div class="wtext">Strong Focus on Discipline &amp; Values</div><div class="wdesc">Building character with integrity and respect.</div></div>
+                </div>
+                <div class="why-item fade-up delay-1">
+                    <div class="wnum">2</div>
+                    <div><div class="wtext">Balanced Academic &amp; Activity-Based Education</div><div class="wdesc">Learning that goes beyond textbooks.</div></div>
+                </div>
+                <div class="why-item fade-up delay-2">
+                    <div class="wnum">3</div>
+                    <div><div class="wtext">Safe &amp; Student-Friendly Environment</div><div class="wdesc">A secure campus with a warm, welcoming atmosphere.</div></div>
+                </div>
+                <div class="why-item fade-up delay-3">
+                    <div class="wnum">4</div>
+                    <div><div class="wtext">Dedicated &amp; Supportive Teaching Staff</div><div class="wdesc">Experienced educators committed to every child's growth.</div></div>
+                </div>
+                <div class="why-item fade-up delay-4">
+                    <div class="wnum">5</div>
+                    <div><div class="wtext">Continuous Focus on Overall Development</div><div class="wdesc">Preparing students for academic and life success.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    ADMISSIONS / ENROLL
+    ============================================================ -->
+    <section class="py-20 section-light" id="admissions">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="section-title fade-up">
+                <span class="subtitle">Admissions</span>
+                <h2>Give Your Child the <span>Best Start</span></h2>
+                <p>Limited spots available for the upcoming session. Enroll now and secure your child's place at Nosegay Convent School.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <div class="fade-up space-y-6">
+                    <div class="bg-white rounded-2xl p-8 border border-premium shadow-sm">
+                        <h3 class="text-2xl font-serif text-dark mb-4">Why Choose Nosegay?</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-4">
+                                <div class="w-6 h-6 rounded-full bg-orange-500/15 flex items-center justify-center text-orange mt-0.5 flex-shrink-0"><i class="fas fa-check text-sm"></i></div>
+                                <div><span class="text-dark font-medium">Holistic Development</span><p class="text-premium-muted text-sm">Academic, emotional, social, and moral growth in a balanced environment.</p></div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-6 h-6 rounded-full bg-orange-500/15 flex items-center justify-center text-orange mt-0.5 flex-shrink-0"><i class="fas fa-check text-sm"></i></div>
+                                <div><span class="text-dark font-medium">Small Class Sizes</span><p class="text-premium-muted text-sm">Personalized attention ensures every child thrives.</p></div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-6 h-6 rounded-full bg-orange-500/15 flex items-center justify-center text-orange mt-0.5 flex-shrink-0"><i class="fas fa-check text-sm"></i></div>
+                                <div><span class="text-dark font-medium">Experienced Faculty</span><p class="text-premium-muted text-sm">Passionate educators with years of teaching expertise.</p></div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-6 h-6 rounded-full bg-orange-500/15 flex items-center justify-center text-orange mt-0.5 flex-shrink-0"><i class="fas fa-check text-sm"></i></div>
+                                <div><span class="text-dark font-medium">Safe &amp; Nurturing</span><p class="text-premium-muted text-sm">A secure campus with a warm, welcoming atmosphere.</p></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-6 text-premium-muted text-sm flex-wrap">
+                        <span><i class="fas fa-phone text-orange mr-2"></i> +91 98765 43210</span>
+                        <span><i class="fas fa-envelope text-orange mr-2"></i> nosegaysikar@gmail.com</span>
+                        <span><i class="fas fa-map-marker-alt text-orange mr-2"></i> Opposite New Housing Board, Jaipur–Jhunjhunu Bypass, Sikar</span>
+                    </div>
+                </div>
+
+                <div class="fade-up delay-1">
+                    <form class="bg-white p-8 lg:p-10 rounded-2xl border border-premium shadow-sm" id="contactForm">
+                        <h4 class="text-xl font-serif text-dark mb-6">Request Admission Information</h4>
+                        <div class="space-y-5">
+                            <div>
+                                <label class="block text-sm font-medium text-dark/70 mb-1.5">Parent / Guardian Name</label>
+                                <input type="text" class="premium-input" placeholder="Full name" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-dark/70 mb-1.5">Email Address</label>
+                                <input type="email" class="premium-input" placeholder="you@example.com" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-dark/70 mb-1.5">Child's Name &amp; Age</label>
+                                <input type="text" class="premium-input" placeholder="e.g. Aanya, 4 years" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-dark/70 mb-1.5">Message</label>
+                                <textarea class="premium-input" placeholder="Tell us about your child and any special requests..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-orange w-full justify-center">
+                                Submit Application <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer" id="contact">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="grid md:grid-cols-4 gap-10">
+                <div>
+                    <h4><i class="fas fa-graduation-cap text-orange mr-2"></i> Nosegay Convent</h4>
+                    <p class="text-sm leading-relaxed">Nurturing young minds with care, creativity, and excellence since 2007.</p>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#philosophy">Philosophy</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get in Touch</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-map-marker-alt text-orange w-5"></i> Opposite New Housing Board, Jaipur–Jhunjhunu Bypass, Sikar</li>
+                        <li><i class="fas fa-phone text-orange w-5"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope text-orange w-5"></i> nosegaysikar@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <span>&copy; 2026 <strong class="text-dark">Nosegay Convent School, Sikar</strong>. All rights reserved.</span>
+                <span>Designed with <i class="fas fa-heart text-orange"></i> for the future of education.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+    BACK TO TOP
+    ============================================================ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ============================================================
+    JAVASCRIPT
+    ============================================================ -->
+    <script>
+        (function() {
+            'use strict';
+
+            // ------------------------------------------------------------
+            // 1. NAVBAR SCROLL
+            // ------------------------------------------------------------
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', function() {
+                navbar.classList.toggle('scrolled', window.scrollY > 40);
+            });
+
+            // ------------------------------------------------------------
+            // 2. MOBILE MENU
+            // ------------------------------------------------------------
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const overlay = document.getElementById('mobileOverlay');
+
+            function toggleMobile(open) {
+                hamburger.classList.toggle('active', open);
+                mobileMenu.classList.toggle('open', open);
+                overlay.classList.toggle('open', open);
+                document.body.style.overflow = open ? 'hidden' : '';
+            }
+
+            hamburger.addEventListener('click', function(e) {
+                e.stopPropagation();
+                toggleMobile(!mobileMenu.classList.contains('open'));
+            });
+
+            overlay.addEventListener('click', function() {
+                toggleMobile(false);
+            });
+
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    toggleMobile(false);
+                });
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+                    toggleMobile(false);
+                }
+            });
+
+            // ------------------------------------------------------------
+            // 3. BACK TO TOP
+            // ------------------------------------------------------------
+            const backBtn = document.getElementById('backToTop');
+            window.addEventListener('scroll', function() {
+                backBtn.classList.toggle('visible', window.scrollY > 400);
+            });
+            backBtn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // ------------------------------------------------------------
+            // 4. SCROLL ANIMATIONS (Intersection Observer)
+            // ------------------------------------------------------------
+            const fadeEls = document.querySelectorAll('.fade-up');
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+                fadeEls.forEach(el => observer.observe(el));
+            } else {
+                fadeEls.forEach(el => el.classList.add('visible'));
+            }
+
+            // ------------------------------------------------------------
+            // 5. SMOOTH NAV LINKS
+            // ------------------------------------------------------------
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        const offset = 80;
+                        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                        window.scrollTo({ top, behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // ------------------------------------------------------------
+            // 6. ACTIVE NAV LINK ON SCROLL
+            // ------------------------------------------------------------
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-links a:not(.btn-orange)');
+            const mobileNavLinks = document.querySelectorAll('.mobile-menu a:not(.btn-orange)');
+
+            function updateActive() {
+                let currentId = '';
+                const scrollY = window.scrollY + 120;
+                sections.forEach(section => {
+                    const top = section.offsetTop;
+                    const height = section.offsetHeight;
+                    if (scrollY >= top && scrollY < top + height) {
+                        currentId = section.getAttribute('id');
+                    }
+                });
+                const all = [...navLinks, ...mobileNavLinks];
+                all.forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+                });
+            }
+
+            window.addEventListener('scroll', updateActive);
+            updateActive();
+
+            // ------------------------------------------------------------
+            // 7. COUNTER ANIMATION
+            // ------------------------------------------------------------
+            const counters = document.querySelectorAll(".counter");
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = +counter.getAttribute("data-target");
+                        const suffix = counter.getAttribute("data-suffix") || "";
+                        let count = 0;
+                        const speed = 20;
+                        const updateCounter = () => {
+                            const increment = target / 100;
+                            if (count < target) {
+                                count += increment;
+                                counter.innerText = Math.ceil(count);
+                                setTimeout(updateCounter, speed);
+                            } else {
+                                counter.innerText = target + suffix;
+                            }
+                        };
+                        updateCounter();
+                        counterObserver.unobserve(counter);
+                    }
+                });
+            }, { threshold: 0.5 });
+            counters.forEach(c => counterObserver.observe(c));
+
+            // ------------------------------------------------------------
+            // 8. FORM SUBMISSION
+            // ------------------------------------------------------------
+            const form = document.getElementById('contactForm');
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const btn = form.querySelector('button[type="submit"]');
+                    const original = btn.innerHTML;
+                    btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Submitting...';
+                    btn.disabled = true;
+                    setTimeout(() => {
+                        btn.innerHTML = '<i class="fas fa-check mr-2"></i> Application Sent!';
+                        btn.style.background = 'linear-gradient(135deg, #22a65e, #15803d)';
+                        setTimeout(() => {
+                            btn.innerHTML = original;
+                            btn.style.background = '';
+                            btn.disabled = false;
+                            form.reset();
+                        }, 2600);
+                    }, 1500);
+                });
+            }
+
+        })();
+    </script>
+
+
+</body>
+</html>
