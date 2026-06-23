@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Nosegay School Sikar – Admissions, inquiries, and campus visits. Reach out to us for a premium preschool & kindergarten education." />
+    <title>Contact Us – Nosegay School Sikar</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        /* ============================================================
+           LIGHT & PREMIUM COLOR THEME – same as index
+           ============================================================ */
+        :root {
+            --bg-light: #f9f6f0;
+            --bg-white: #ffffff;
+            --bg-card: #ffffff;
+            --orange: #f97316;
+            --orange-light: #fb923c;
+            --orange-dark: #ea580c;
+            --orange-glow: rgba(249, 115, 22, 0.20);
+            --text-dark: #1a1a2e;
+            --text-muted: #6b6b80;
+            --text-white: #ffffff;
+            --shadow-sm: 0 4px 24px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 12px 48px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 24px 72px rgba(0, 0, 0, 0.08);
+            --radius: 20px;
+            --radius-sm: 12px;
+            --transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-light);
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* ---------- Orange Gradient Text ---------- */
+        .text-orange-gradient {
+            background: linear-gradient(135deg, var(--orange-light) 0%, var(--orange) 50%, var(--orange-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-orange {
+            color: var(--orange);
+        }
+        .border-orange {
+            border-color: var(--orange);
+        }
+        .bg-orange {
+            background: var(--orange);
+        }
+        .bg-orange-soft {
+            background: rgba(249, 115, 22, 0.08);
+        }
+        .bg-orange-glow {
+            background: var(--orange-glow);
+        }
+
+        /* ---------- Buttons ---------- */
+        .btn-orange {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 40px;
+            background: linear-gradient(135deg, var(--orange-light), var(--orange));
+            color: var(--text-white);
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            border-radius: 60px;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 8px 32px rgba(249, 115, 22, 0.30);
+            text-decoration: none;
+            letter-spacing: 0.01em;
+        }
+
+        .btn-orange:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 16px 48px rgba(249, 115, 22, 0.45);
+            color: var(--text-white);
+        }
+
+        .btn-orange i {
+            transition: var(--transition);
+        }
+        .btn-orange:hover i {
+            transform: translateX(6px);
+        }
+
+        .btn-outline-orange {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 36px;
+            background: transparent;
+            color: var(--orange);
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid var(--orange);
+            border-radius: 60px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .btn-outline-orange:hover {
+            background: var(--orange);
+            color: var(--text-white);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(249, 115, 22, 0.25);
+        }
+
+        .btn-outline-orange i {
+            transition: var(--transition);
+        }
+        .btn-outline-orange:hover i {
+            transform: translateX(6px);
+        }
+
+        /* ---------- Navbar ---------- */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 14px 0;
+            transition: var(--transition);
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.02);
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.96);
+            box-shadow: 0 4px 40px rgba(0, 0, 0, 0.06);
+            padding: 10px 0;
+        }
+
+        .navbar .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .navbar .logo span {
+            color: var(--orange);
+        }
+
+        .navbar .logo i {
+            color: var(--orange);
+            margin-right: 8px;
+            font-size: 1.3rem;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 8px 18px;
+            border-radius: 40px;
+            transition: var(--transition);
+            position: relative;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 70%;
+            height: 2.5px;
+            background: linear-gradient(90deg, var(--orange-light), var(--orange), var(--orange-dark));
+            border-radius: 4px;
+            transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transform-origin: center;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+
+        .nav-links a:hover {
+            color: var(--text-dark);
+            background: rgba(249, 115, 22, 0.06);
+        }
+
+        .nav-links a.active {
+            color: var(--text-dark);
+            background: rgba(249, 115, 22, 0.08);
+        }
+
+        .nav-links .btn-orange {
+            padding: 10px 24px;
+            font-size: 0.85rem;
+            gap: 8px;
+        }
+        .nav-links .btn-orange::after {
+            display: none;
+        }
+
+        /* ---------- Mobile Menu ---------- */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 6px 4px;
+            background: transparent;
+            border: none;
+            z-index: 1001;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2.5px;
+            background: var(--text-dark);
+            border-radius: 4px;
+            transition: var(--transition);
+            transform-origin: center;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 85%;
+            max-width: 380px;
+            height: 100vh;
+            background: var(--bg-white);
+            padding: 100px 32px 40px;
+            transition: var(--transition);
+            z-index: 999;
+            overflow-y: auto;
+            box-shadow: -20px 0 60px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            border-left: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .mobile-menu.open {
+            right: 0;
+        }
+
+        .mobile-menu a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 500;
+            padding: 14px 18px;
+            border-radius: 12px;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .mobile-menu a:hover,
+        .mobile-menu a.active {
+            background: rgba(249, 115, 22, 0.06);
+            color: var(--text-dark);
+        }
+
+        .mobile-menu .btn-orange {
+            margin-top: 16px;
+            justify-content: center;
+            width: 100%;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .mobile-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.30);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            z-index: 998;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .mobile-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ---------- Hero / Page Banner ---------- */
+        .page-hero {
+            position: relative;
+            padding: 140px 0 80px;
+            background: linear-gradient(160deg, #fdf8f2 0%, #f5ede3 100%);
+            overflow: hidden;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .page-hero .bubbles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .page-hero .bubbles .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, rgba(249, 115, 22, 0.08), rgba(249, 115, 22, 0.02));
+            border: 1px solid rgba(249, 115, 22, 0.04);
+            animation: floatBubble 8s ease-in-out infinite;
+        }
+
+        /* ---- MORE BUBBLES ---- */
+        .page-hero .bubbles .bubble:nth-child(1) {
+            width: 180px;
+            height: 180px;
+            top: 5%;
+            left: 2%;
+            animation-duration: 9s;
+            animation-delay: 0s;
+        }
+        .page-hero .bubbles .bubble:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            bottom: 25%;
+            left: 6%;
+            animation-duration: 7s;
+            animation-delay: 1.2s;
+        }
+        .page-hero .bubbles .bubble:nth-child(3) {
+            width: 260px;
+            height: 260px;
+            top: 30%;
+            right: 2%;
+            animation-duration: 10s;
+            animation-delay: 0.6s;
+            opacity: 0.35;
+        }
+        .page-hero .bubbles .bubble:nth-child(4) {
+            width: 90px;
+            height: 90px;
+            bottom: 10%;
+            right: 18%;
+            animation-duration: 6s;
+            animation-delay: 2s;
+        }
+        .page-hero .bubbles .bubble:nth-child(5) {
+            width: 150px;
+            height: 150px;
+            top: 55%;
+            left: 25%;
+            animation-duration: 8.5s;
+            animation-delay: 0.3s;
+            opacity: 0.25;
+        }
+        .page-hero .bubbles .bubble:nth-child(6) {
+            width: 70px;
+            height: 70px;
+            bottom: 40%;
+            right: 35%;
+            animation-duration: 7.5s;
+            animation-delay: 1.8s;
+            opacity: 0.4;
+        }
+        .page-hero .bubbles .bubble:nth-child(7) {
+            width: 200px;
+            height: 200px;
+            top: 10%;
+            right: 30%;
+            animation-duration: 11s;
+            animation-delay: 0.9s;
+            opacity: 0.20;
+        }
+        .page-hero .bubbles .bubble:nth-child(8) {
+            width: 100px;
+            height: 100px;
+            bottom: 5%;
+            left: 40%;
+            animation-duration: 6.5s;
+            animation-delay: 2.4s;
+            opacity: 0.3;
+        }
+        .page-hero .bubbles .bubble:nth-child(9) {
+            width: 140px;
+            height: 140px;
+            top: 20%;
+            left: 55%;
+            animation-duration: 9.5s;
+            animation-delay: 0.5s;
+            opacity: 0.2;
+        }
+        .page-hero .bubbles .bubble:nth-child(10) {
+            width: 60px;
+            height: 60px;
+            bottom: 55%;
+            right: 10%;
+            animation-duration: 5.5s;
+            animation-delay: 1.5s;
+            opacity: 0.5;
+        }
+
+        @keyframes floatBubble {
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+            25% {
+                transform: translate(15px, -25px) scale(1.02);
+            }
+            50% {
+                transform: translate(-10px, 10px) scale(0.98);
+            }
+            75% {
+                transform: translate(20px, -15px) scale(1.01);
+            }
+        }
+
+        .page-hero .hero-content {
+            position: relative;
+            z-index: 1;
+            animation: heroBounce 4s ease-in-out infinite;
+        }
+
+        @keyframes heroBounce {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        .page-hero .hero-content .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(249, 115, 22, 0.10);
+            padding: 6px 20px;
+            border-radius: 60px;
+            color: var(--orange);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            border: 1px solid rgba(249, 115, 22, 0.10);
+            width: fit-content;
+            margin-bottom: 20px;
+        }
+
+        .page-hero .hero-content h1 {
+            font-size: clamp(2.4rem, 5vw, 3.8rem);
+            color: var(--text-dark);
+            line-height: 1.08;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .page-hero .hero-content h1 .highlight {
+            color: var(--orange);
+        }
+
+        .page-hero .hero-content p {
+            font-size: clamp(1rem, 1.2vw, 1.15rem);
+            color: var(--text-muted);
+            line-height: 1.8;
+            max-width: 520px;
+            margin-bottom: 32px;
+        }
+
+        /* ---------- Section Titles ---------- */
+        .section-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-title .subtitle {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--orange);
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .section-title .subtitle::before,
+        .section-title .subtitle::after {
+            content: '—';
+            margin: 0 12px;
+            color: var(--orange);
+            opacity: 0.30;
+        }
+
+        .section-title h2 {
+            font-size: clamp(2rem, 3.4vw, 2.8rem);
+            color: var(--text-dark);
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        .section-title h2 span {
+            color: var(--orange);
+        }
+
+        .section-title p {
+            font-size: 1rem;
+            color: var(--text-muted);
+            max-width: 540px;
+            margin: 14px auto 0;
+            line-height: 1.7;
+        }
+
+        /* ---------- Premium Cards ---------- */
+        .premium-card {
+            background: var(--bg-white);
+            border-radius: var(--radius);
+            padding: 32px 28px;
+            transition: var(--transition);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .premium-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--orange-light), var(--orange), var(--orange-dark));
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .premium-card:hover::before {
+            opacity: 1;
+        }
+
+        .premium-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+            border-color: rgba(249, 115, 22, 0.10);
+        }
+
+        .premium-card .icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: var(--text-white);
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--orange-light), var(--orange));
+            box-shadow: 0 8px 24px rgba(249, 115, 22, 0.20);
+        }
+
+        .premium-card h4 {
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .premium-card p {
+            color: var(--text-muted);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .premium-card .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-top: 6px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .premium-card .contact-detail i {
+            color: var(--orange);
+            width: 20px;
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+
+        /* ---------- Contact Form ---------- */
+        .premium-input {
+            width: 100%;
+            padding: 14px 18px;
+            border: 1.5px solid rgba(0, 0, 0, 0.06);
+            border-radius: var(--radius-sm);
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            transition: var(--transition);
+            background: var(--bg-white);
+            color: var(--text-dark);
+            outline: none;
+        }
+
+        .premium-input:focus {
+            border-color: var(--orange);
+            box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.08);
+        }
+
+        .premium-input::placeholder {
+            color: var(--text-muted);
+            opacity: 0.50;
+        }
+
+        textarea.premium-input {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .bg-premium-light {
+            background: var(--bg-light);
+        }
+        .border-premium {
+            border-color: rgba(0, 0, 0, 0.04);
+        }
+        .text-premium-muted {
+            color: var(--text-muted);
+        }
+
+        .section-light {
+            background: var(--bg-light);
+        }
+        .section-white {
+            background: var(--bg-white);
+        }
+
+        /* ---------- Map Card ---------- */
+        .map-wrapper {
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            background: var(--bg-white);
+            transition: var(--transition);
+        }
+
+        .map-wrapper:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .map-wrapper iframe {
+            width: 100%;
+            height: 340px;
+            display: block;
+            border: 0;
+        }
+
+        /* ---------- FAQ Accordion ---------- */
+        .faq-item {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+            padding: 18px 0;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item .question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 1.05rem;
+            transition: var(--transition);
+        }
+
+        .faq-item .question i {
+            color: var(--orange);
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+
+        .faq-item .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.4s ease;
+            opacity: 0;
+            color: var(--text-muted);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .faq-item.open .answer {
+            max-height: 300px;
+            opacity: 1;
+            padding-top: 14px;
+        }
+
+        .faq-item.open .question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-item:hover .question {
+            color: var(--orange);
+        }
+
+        /* ---------- Footer ---------- */
+        .footer {
+            background: var(--bg-white);
+            color: var(--text-muted);
+            padding: 56px 0 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .footer h4 {
+            color: var(--text-dark);
+            font-size: 1.2rem;
+            margin-bottom: 18px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer a:hover {
+            color: var(--orange);
+        }
+
+        .footer .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.03);
+            color: var(--text-muted);
+            transition: var(--transition);
+            margin-right: 6px;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .footer .social-links a:hover {
+            background: var(--orange);
+            color: var(--text-white);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(249, 115, 22, 0.20);
+            border-color: var(--orange);
+        }
+
+        .footer .copyright {
+            border-top: 1px solid rgba(0, 0, 0, 0.04);
+            padding: 20px 0;
+            margin-top: 36px;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        /* ---------- Back to Top ---------- */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--orange-light), var(--orange));
+            color: var(--text-white);
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 8px 32px rgba(249, 115, 22, 0.30);
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-6px) scale(1.06);
+            box-shadow: 0 16px 48px rgba(249, 115, 22, 0.45);
+        }
+
+        /* ---------- Animations ---------- */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-1 {
+            transition-delay: 0.1s;
+        }
+        .delay-2 {
+            transition-delay: 0.2s;
+        }
+        .delay-3 {
+            transition-delay: 0.3s;
+        }
+        .delay-4 {
+            transition-delay: 0.4s;
+        }
+
+        /* ---------- Responsive ---------- */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .navbar .logo {
+                font-size: 1.2rem;
+            }
+
+            .page-hero {
+                padding: 110px 0 50px;
+                min-height: auto;
+            }
+            .page-hero .hero-content {
+                animation: none;
+            }
+            .page-hero .hero-content h1 {
+                font-size: 2rem;
+            }
+            .page-hero .hero-content p {
+                font-size: 0.95rem;
+            }
+            .page-hero .bubbles .bubble {
+                display: none;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .premium-card {
+                padding: 20px 16px;
+            }
+
+            .map-wrapper iframe {
+                height: 240px;
+            }
+
+            .footer .copyright {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .btn-orange,
+            .btn-outline-orange {
+                padding: 12px 24px;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero .hero-content h1 {
+                font-size: 1.7rem;
+            }
+            .premium-card .icon {
+                width: 44px;
+                height: 44px;
+                font-size: 1rem;
+            }
+            .premium-card h4 {
+                font-size: 1rem;
+            }
+        }
+
+        /* ---------- Scrollbar ---------- */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-light);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--orange);
+            border-radius: 12px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--orange-dark);
+        }
+
+        /* ---------- Additional Contact-specific ---------- */
+        .contact-highlight {
+            background: var(--bg-white);
+            border-radius: var(--radius);
+            padding: 32px 28px;
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contact-highlight .highlight-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--orange);
+            line-height: 1.2;
+        }
+
+        .contact-highlight .highlight-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .contact-cta-banner {
+            background: linear-gradient(135deg, var(--orange-light), var(--orange-dark));
+            border-radius: var(--radius);
+            padding: 48px 40px;
+            color: var(--text-white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-cta-banner::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            pointer-events: none;
+        }
+
+        .contact-cta-banner h3 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-cta-banner p {
+            opacity: 0.90;
+            max-width: 440px;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-cta-banner .btn-white {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 36px;
+            background: var(--text-white);
+            color: var(--orange);
+            font-weight: 600;
+            border-radius: 60px;
+            text-decoration: none;
+            transition: var(--transition);
+            position: relative;
+            z-index: 1;
+            border: none;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+
+        .contact-cta-banner .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-cta-banner .btn-white i {
+            transition: var(--transition);
+        }
+        .contact-cta-banner .btn-white:hover i {
+            transform: translateX(6px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================================================
+    NAVBAR – only Home, About, Admissions, Contact
+    ============================================================ -->
+    <header class="navbar" id="navbar">
+        <div class="container mx-auto px-6 lg:px-12 flex items-center justify-between">
+            <a href="index.html" class="logo">
+                <i class="fas fa-graduation-cap"></i> Nosegay<span>School</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#admissions">Admissions</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li>
+                    <a href="index.html#admissions" class="btn-orange" style="padding:10px 24px; font-size:0.85rem; gap:8px;">
+                        Enroll Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Menu – only Home, About, Admissions, Contact -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#admissions">Admissions</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="index.html#admissions" class="btn-orange" style="justify-content:center; width:100%; margin-top:20px;">
+            Enroll Now <i class="fas fa-arrow-right"></i>
+        </a>
+    </nav>
+
+    <!-- ============================================================
+    PAGE HERO – Contact Banner (MORE BUBBLES)
+    ============================================================ -->
+    <section class="page-hero" id="contact-hero">
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+
+        <div class="container mx-auto px-6 lg:px-12 relative z-10">
+            <div class="hero-content max-w-3xl">
+                <div class="badge">
+                    <i class="fas fa-phone-alt"></i> Get in Touch
+                </div>
+                <h1>
+                    We'd Love to <br />
+                    <span class="highlight">Hear From You</span>
+                </h1>
+                <p>
+                    Whether you have a question about admissions, want to schedule a campus visit,
+                    or simply wish to know more about our philosophy — our team is here to help.
+                    Reach out and let's start a conversation about your child's future.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact-form" class="btn-orange">Send a Message <i class="fas fa-arrow-right"></i></a>
+                    <a href="#map-section" class="btn-outline-orange">Find Us <i class="fas fa-map-pin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CONTACT INFO CARDS
+    ============================================================ -->
+    <section class="py-16 section-white" id="contact-info">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="section-title fade-up">
+                <span class="subtitle">Connect With Us</span>
+                <h2>Reach Out Anytime, <span>Anywhere</span></h2>
+                <p>We're just a call, click, or visit away. Here's how you can get in touch with the Nosegay family.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 – Address -->
+                <div class="premium-card fade-up delay-1">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h4>Visit Us</h4>
+                    <div class="contact-detail">
+                        <i class="fas fa-location-dot"></i>
+                        <span>Nosegay School, Near Bus Stand,<br />Sikar, Rajasthan 332001</span>
+                    </div>
+                    <div class="contact-detail mt-2">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon–Fri: 8:00 AM – 3:00 PM</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 – Phone -->
+                <div class="premium-card fade-up delay-2">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <h4>Call Us</h4>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <span><a href="tel:+919001234567" class="text-orange hover:underline">+91 90012 34567</a></span>
+                    </div>
+                    <div class="contact-detail mt-2">
+                        <i class="fas fa-phone"></i>
+                        <span><a href="tel:+919876543210" class="text-orange hover:underline">+91 98765 43210</a></span>
+                    </div>
+                    <div class="contact-detail mt-2">
+                        <i class="fas fa-clock"></i>
+                        <span>Support: 9:00 AM – 6:00 PM</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 – Email -->
+                <div class="premium-card fade-up delay-3">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <h4>Email Us</h4>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="mailto:info@nosegayschool.edu" class="text-orange hover:underline">info@nosegayschool.edu</a></span>
+                    </div>
+                    <div class="contact-detail mt-2">
+                        <i class="fas fa-envelope"></i>
+                        <span><a href="mailto:admissions@nosegayschool.edu" class="text-orange hover:underline">admissions@nosegayschool.edu</a></span>
+                    </div>
+                    <div class="contact-detail mt-2">
+                        <i class="fas fa-reply-all"></i>
+                        <span>We reply within 24 hours</span>
+                    </div>
+                </div>
+
+                <!-- Card 4 – Social -->
+                <div class="premium-card fade-up delay-4">
+                    <div class="icon"><i class="fas fa-share-alt"></i></div>
+                    <h4>Follow Us</h4>
+                    <p class="mb-3">Stay connected and see what's happening at Nosegay every day.</p>
+                    <div class="flex gap-3 flex-wrap">
+                        <a href="#" class="w-10 h-10 rounded-full bg-orange-soft text-orange flex items-center justify-center hover:bg-orange hover:text-white transition-all duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-orange-soft text-orange flex items-center justify-center hover:bg-orange hover:text-white transition-all duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-orange-soft text-orange flex items-center justify-center hover:bg-orange hover:text-white transition-all duration-300"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-orange-soft text-orange flex items-center justify-center hover:bg-orange hover:text-white transition-all duration-300"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-orange-soft text-orange flex items-center justify-center hover:bg-orange hover:text-white transition-all duration-300"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+    CONTACT FORM + MAP
+    ============================================================ -->
+    <section class="py-20 section-light" id="contact-form">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Left: Form -->
+                <div class="fade-up">
+                    <div class="bg-white p-8 lg:p-10 rounded-2xl border border-premium shadow-sm">
+                        <h3 class="text-2xl font-serif text-dark mb-2">Send Us a <span class="text-orange-gradient">Message</span></h3>
+                        <p class="text-premium-muted text-sm mb-6">Fill in the details below and we'll get back to you promptly.</p>
+
+                        <form id="contactForm" class="space-y-5">
+                            <div>
+                                <label class="block text-sm font-medium text-dark/70 mb-1.5">Your Full Name <span class="text-orange">*</span></label>
+                                <input type="text" class="premium-input" placeholder="e.g. Rajesh Kumar" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-dark/70 mb-1.5">Email Address <span class="text-orange">*</span></label>
+                                <input type="email" class="premium-input" placeholder="you@example.com" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-dark/70 mb-1.5">Phone Number</label>
+                                <input type="tel" class="premium-input" placeholder="+91 98765 43210" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-dark/70 mb-1.5">Subject</label>
+                                <input type="text" class="premium-input" placeholder="e.g. Admission Inquiry for 2026-27" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-dark/70 mb-1.5">Your Message <span class="text-orange">*</span></label>
+                                <textarea class="premium-input" placeholder="Tell us how we can help — questions about admissions, curriculum, campus tours, or anything else..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-orange w-full justify-center">
+                                Send Message <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <p class="text-xs text-premium-muted text-center mt-3">
+                                <i class="fas fa-lock text-orange mr-1"></i> Your information is safe with us.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right: Map + Quick Info -->
+                <div class="fade-up delay-1 space-y-6">
+                    <!-- Map -->
+                    <div class="map-wrapper" id="map-section">
+                       <iframe
+    src="https://maps.google.com/maps?q=Nosegay%20Convent%20School%20Sikar&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Nosegay Convent School Sikar Location">
+</iframe>
+                </div>
+
+              
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+FAQ SECTION
+============================================================ -->
+<section class="py-20 section-white" id="faq">
+    <div class="container mx-auto px-6 lg:px-12">
+        <div class="section-title fade-up">
+            <span class="subtitle">FAQ</span>
+            <h2>Frequently Asked <span>Questions</span></h2>
+            <p>Quick answers to the most common questions parents ask about Nosegay School.</p>
+        </div>
+
+        <div class="max-w-3xl mx-auto fade-up">
+            <div class="bg-white rounded-2xl border border-premium shadow-sm p-6 lg:p-10">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item open">
+                    <div class="question">
+                        <span>What is the admission process for the upcoming session?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="answer">
+                        The admission process at Nosegay School is simple and transparent. It begins with filling out the inquiry form on our website or visiting the campus. Our admissions team will then schedule a parent-school interaction and a brief assessment for the child. We believe in understanding each child's unique needs before enrollment. For the 2026–27 session, admissions are now open — we encourage you to apply early as seats are limited.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="question">
+                        <span>What is the student-to-teacher ratio at Nosegay?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="answer">
+                        We maintain a low student-to-teacher ratio of 12:1 for our preschool and kindergarten sections. This ensures that every child receives personalized attention, and our educators can tailor their teaching methods to suit each child's learning style. We believe that small class sizes are the foundation of effective early childhood education.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <div class="question">
+                        <span>Does Nosegay School offer transportation facilities?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="answer">
+                        Yes, we provide safe and reliable transportation services for students within a 10 km radius of the school. Our buses are equipped with GPS tracking, seat belts, and trained attendants to ensure the safety and comfort of every child. We also maintain regular communication with parents regarding pick-up and drop-off schedules.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="question">
+                        <span>What curriculum does Nosegay School follow?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="answer">
+                        Nosegay School follows a balanced curriculum that integrates the best practices of the Montessori method, play-based learning, and the RBSE framework. Our approach is holistic — we focus on academic readiness, emotional intelligence, physical development, and creative expression. We also incorporate STEAM (Science, Technology, Engineering, Arts, Mathematics) activities into our daily schedule to nurture curiosity and innovation.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <div class="question">
+                        <span>How can I schedule a campus visit?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="answer">
+                        Scheduling a campus visit is easy! Simply fill out the contact form on this page, or give us a call at <a href="tel:+919001234567" class="text-orange hover:underline">+91 90012 34567</a>. Our admissions team will coordinate a convenient time for you to tour the campus, meet our educators, and experience the Nosegay environment firsthand. We host open house events every Saturday from 10:00 AM to 12:00 PM.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+CTA BANNER – Admission Drive
+============================================================ -->
+<section class="py-16 section-light">
+    <div class="container mx-auto px-6 lg:px-12">
+        <div class="contact-cta-banner fade-up">
+            <div class="relative z-10">
+                <h3>Ready to Give Your Child <br />the <span style="color:#fff; text-decoration:underline; text-decoration-color:rgba(255,255,255,0.3);">Nosegay Advantage</span>?</h3>
+                <p>Admissions for the 2026–27 academic session are now open. We invite you to become a part of our growing family — where every child is nurtured, celebrated, and empowered to shine.</p>
+                <div class="flex flex-wrap gap-4 mt-6">
+                    <a href="index.html#admissions" class="btn-white">
+                        Enroll Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="tel:+919001234567" class="text-white font-medium flex items-center gap-2 hover:underline">
+                        <i class="fas fa-phone"></i> +91 90012 34567
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+FOOTER
+============================================================ -->
+<footer class="footer" id="footer">
+    <div class="container mx-auto px-6 lg:px-12">
+        <div class="grid md:grid-cols-4 gap-10">
+            <div>
+                <h4><i class="fas fa-graduation-cap text-orange mr-2"></i> Nosegay School</h4>
+                <p class="text-sm leading-relaxed">Nurturing young minds with care, creativity, and excellence since 2012.</p>
+                <div class="social-links mt-4">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#admissions">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Newsletter</h4>
+                <p class="text-sm">Subscribe for updates on events and admissions.</p>
+                <div class="mt-3 flex">
+                    <input type="email" placeholder="Your email" class="premium-input rounded-r-none" style="border-radius:12px 0 0 12px; flex:1;" />
+                    <button class="btn-orange rounded-l-none" style="border-radius:0 12px 12px 0; padding:0 18px;">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <span>&copy; 2026 <strong class="text-dark">Nosegay School</strong>. All rights reserved.</span>
+            <span>Designed with <i class="fas fa-heart text-orange"></i> for the future of education.</span>
+        </div>
+    </div>
+</footer>
+
+<!-- ============================================================
+BACK TO TOP
+============================================================ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- ============================================================
+JAVASCRIPT
+============================================================ -->
+<script>
+    (function() {
+        'use strict';
+
+        // ------------------------------------------------------------
+        // 1. NAVBAR SCROLL
+        // ------------------------------------------------------------
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', function() {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        });
+
+        // ------------------------------------------------------------
+        // 2. MOBILE MENU
+        // ------------------------------------------------------------
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('mobileOverlay');
+
+        function toggleMobile(open) {
+            hamburger.classList.toggle('active', open);
+            mobileMenu.classList.toggle('open', open);
+            overlay.classList.toggle('open', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        }
+
+        hamburger.addEventListener('click', function(e) {
+            e.stopPropagation();
+            toggleMobile(!mobileMenu.classList.contains('open'));
+        });
+
+        overlay.addEventListener('click', function() {
+            toggleMobile(false);
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                toggleMobile(false);
+            });
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+                toggleMobile(false);
+            }
+        });
+
+        // ------------------------------------------------------------
+        // 3. BACK TO TOP
+        // ------------------------------------------------------------
+        const backBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', function() {
+            backBtn.classList.toggle('visible', window.scrollY > 400);
+        });
+        backBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ------------------------------------------------------------
+        // 4. SCROLL ANIMATIONS (Intersection Observer)
+        // ------------------------------------------------------------
+        const fadeEls = document.querySelectorAll('.fade-up');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
+            fadeEls.forEach(el => observer.observe(el));
+        } else {
+            fadeEls.forEach(el => el.classList.add('visible'));
+        }
+
+        // ------------------------------------------------------------
+        // 5. FAQ ACCORDION
+        // ------------------------------------------------------------
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.question');
+            question.addEventListener('click', function() {
+                const isOpen = item.classList.contains('open');
+                faqItems.forEach(f => f.classList.remove('open'));
+                if (!isOpen) {
+                    item.classList.add('open');
+                }
+            });
+        });
+
+        // ------------------------------------------------------------
+        // 6. FORM SUBMISSION
+        // ------------------------------------------------------------
+        const form = document.getElementById('contactForm');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const btn = form.querySelector('button[type="submit"]');
+                const original = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
+                btn.disabled = true;
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="fas fa-check mr-2"></i> Message Sent!';
+                    btn.style.background = 'linear-gradient(135deg, #22a65e, #15803d)';
+                    setTimeout(() => {
+                        btn.innerHTML = original;
+                        btn.style.background = '';
+                        btn.disabled = false;
+                        form.reset();
+                    }, 2600);
+                }, 1500);
+            });
+        }
+
+        // ------------------------------------------------------------
+        // 7. SMOOTH NAV LINKS
+        // ------------------------------------------------------------
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    const offset = 80;
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ------------------------------------------------------------
+        // 8. ACTIVE NAV LINK ON SCROLL (for this page)
+        // ------------------------------------------------------------
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a:not(.btn-orange)');
+        const mobileNavLinks = document.querySelectorAll('.mobile-menu a:not(.btn-orange)');
+
+        function updateActive() {
+            let currentId = '';
+            const scrollY = window.scrollY + 120;
+            sections.forEach(section => {
+                const top = section.offsetTop;
+                const height = section.offsetHeight;
+                if (scrollY >= top && scrollY < top + height) {
+                    currentId = section.getAttribute('id');
+                }
+            });
+            const all = [...navLinks, ...mobileNavLinks];
+            all.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+            });
+        }
+
+        window.addEventListener('scroll', updateActive);
+        updateActive();
+
+    })();
+</script>
+
+</body>
+</html>
